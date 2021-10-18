@@ -95,7 +95,7 @@ function game(){
         }
         let computerSelection = computerPlay();
         let result = playRound(userSelection, computerSelection);
-        console.log(`Current score:/n player: ${playerWins}/n computer: ${computerWins}`);
+        console.log(`Current score:\n player: ${playerWins}\n computer: ${computerWins}`);
         counter++;
     }
     if (playerWins===computerWins){
