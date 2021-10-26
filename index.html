@@ -1,1 +1,42 @@
-<script type="text/javascript" src="game.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <script src="https://kit.fontawesome.com/a886f1e4a9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Can you beat the computer?</h1>
+                <p>Click on an icon to start the game</p>
+            </div>
+            <div class="selection-container">
+                <div class="icon">
+                    <i class="far fa-hand-rock"></i>
+                    <p>Rock</p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-hand-paper"></i>
+                    <p>Paper</p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-hand-scissors"></i>
+                    <p>Scissors</p>
+                </div>
+            </div>
+            <div class='results-container'>
+                <div class="user-score-container">
+                    <h5>User score: <span id="user-score"></span></h5>
+                </div>
+                <div class="computer-score-container">
+                    <h5>Computer score: <span id="computer-score"></span></h5>
+                </div>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
