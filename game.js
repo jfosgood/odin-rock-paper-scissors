@@ -1,6 +1,27 @@
 let playerWins = 0;
 let computerWins = 0;
 
+const rockIcon = document.querySelector("#rock");
+const paperIcon = document.querySelector("#paper");
+const scissorsIcon = document.querySelector("#scissors");
+
+const icons = document.querySelectorAll("i");
+
+icons.forEach((icon)=>{
+    icon.addEventListener('click', ()=>{
+        console.log(icon.id);
+    });
+});
+
+const selections = ["rock", "paper", "scissors"];
+const playerChoosesRock = ["Tie", "You Lose! Paper beats Rock", "You Win! Rock beats Scissors"];
+const playerChoosesPaper = ["You Win! Paper beats Rock", "Tie", "You Lose! Scissors beats Paper"];
+const playerChoosesScissors = ["You Lose! Rock beats Scissors", "You Win! Scissors beats Paper", "Tie"];
+
+
+
+
+
 function computerPlay () {
         const choices = ["rock", "paper", "scissors"];
         let i = Math.floor(Math.random()*3);
@@ -109,4 +130,3 @@ function game(){
     }
 }
 
-game();

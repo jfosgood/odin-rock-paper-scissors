@@ -3,6 +3,7 @@
     <head>
         <title>Rock Paper Scissors</title>
         <script src="https://kit.fontawesome.com/a886f1e4a9.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="uiGame.js" defer></script>
         <link rel="stylesheet" href="style.css"/>
         <meta charset="UTF-8">
     </head>
@@ -14,24 +15,27 @@
             </div>
             <div class="selection-container">
                 <div class="icon">
-                    <i class="far fa-hand-rock"></i>
+                    <i class="far fa-hand-rock" id="rock"></i>
                     <p>Rock</p>
                 </div>
                 <div class="icon">
-                    <i class="far fa-hand-paper"></i>
+                    <i class="far fa-hand-paper" id="paper"></i>
                     <p>Paper</p>
                 </div>
                 <div class="icon">
-                    <i class="far fa-hand-scissors"></i>
+                    <i class="far fa-hand-scissors" id="scissors"></i>
                     <p>Scissors</p>
                 </div>
             </div>
+            <div class="results-text">
+                <h5 id="results-readout"></h5>
+            </div>
             <div class='results-container'>
                 <div class="user-score-container">
-                    <h5>User score: <span id="user-score"></span></h5>
+                    <h5>User score: <span id="user-score">0</span></h5>
                 </div>
                 <div class="computer-score-container">
-                    <h5>Computer score: <span id="computer-score"></span></h5>
+                    <h5>Computer score: <span id="computer-score">0</span></h5>
                 </div>
                 <button id="reset">Reset</button>
             </div>

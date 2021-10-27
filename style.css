@@ -40,6 +40,10 @@ div {
     text-align: center;
 }
 
+.icon.far :hover{
+    cursor: pointer;
+}
+
 .far{
     size: 4;
 }
